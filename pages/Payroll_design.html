@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="header-content">
-  <div class="logo-content"><img src="..\Assets\th_2.jpg" alt="">
+  <div class="logo-content"><img src="th_2.jpg" alt="">
     <div>
       <span class="emp-text">EMPLOYEE</span>
       <span class="emp-text emp-payroll">PAYROLL</span>
@@ -26,7 +26,38 @@
     <label for="name" class="label text">Name</label>
     <input type="text" class="input" id="name" name="name" placeholder="Your name" required>
   </div>
-  </form>
+  --uc3
+</div>
+<div>
+    <table id="dispaly" class="table">
+        <tr>
+            <th>Profile</Picture></th>                   
+            <th><pre >Name</pre></th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>startDate</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td><img class="profile" alt="" src="profile1.jpg"></td>
+            <td id = "v" >Charu </td>
+            <td>Female</td>
+            <td><div class='dept-label'>Sales</div>
+                <div class='dept-label'>HR</div>
+                <div class='dept-label'>Finance</div></td>
+         
+            <td>300000</td>
+            <td>28 December 2022</td>
+            <td>
+                <img id="1" class = "Icon delete" onclick="remove(this)" alt="delete"
+                    src="deleteicon.jpg">
+                <img id="1" class = "Icon" alt="edit" onclick="update(this)"
+                    src="edit-Icon.png">
+            </td>         
+        </tr>
+    </table> 
+  </div>
 </div>
 </body>
 </html>
