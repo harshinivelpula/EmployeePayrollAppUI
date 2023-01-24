@@ -185,3 +185,37 @@ const createInnerHtml = () => {
     `;
     document.querySelector('#table-display').innerHTML = innerHtml;
 }
+const getDeptHtml=(deptList)=>{
+    let deptHtml='';
+    for(const dept of deptList){
+        deptHtml=`${deptHtml}<div class='dept-label'>${dept}</div>`;
+    }
+    return deptHtml;
+    }
+    const createEmployeePayrollJSON =() => {
+        let empPayrollListLocal = [
+            {
+                _name: 'Mickey',
+                _Gender:'Female',
+                _department: [
+                    'Sales','HR','Finance'
+                ],
+                _Salary: '30000',
+                _StartDate: '10-04-2022',
+                _note:'',
+                _profile: 'image/profile1.jpg'
+            },
+            {
+                _name: 'Abc',
+                _Gender:'Male',
+                _department: [
+                    'Sales','HR','Finance'
+                ],
+                _Salary: '30000',
+                _StartDate: '10-04-2022',
+                _note:'',
+                _profile: 'image/profile2.jpg'
+            }
+        ];
+        return empPayrollListLocal;
+    }
